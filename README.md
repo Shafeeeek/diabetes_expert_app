@@ -1,2 +1,3 @@
-# diabetes_expert_app
-A Flutter-based diabetes risk assessment expert system with animated welcome screen
+# diabtes_app
+
+A new Flutter project.
