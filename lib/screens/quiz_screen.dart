@@ -50,6 +50,8 @@ class _QuizScreenState extends State<QuizScreen> {
     }
   }
 
+  // Removed duplicate build method to fix error.
+
   @override
   Widget build(BuildContext context) {
     final question = allQuestions[currentIndex];

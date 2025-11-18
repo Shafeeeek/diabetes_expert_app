@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'متابعة مرض السكري',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.deepOrange,
         useMaterial3: true,
       ),
       home: WelcomeScreen(), // 👈 Start here
