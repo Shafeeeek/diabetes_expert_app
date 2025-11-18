@@ -40,10 +40,10 @@ class _QuizScreenState extends State<QuizScreen> {
         MaterialPageRoute(
           builder: (_) => ResultScreen(
             score: totalScore,
-            familyHistory: "Yes",
-            activityLevel: "Sedentary",
-            dietType: "High-Sugar",
-            smokingStatus: "No",
+            familyHistory: "  نعم",
+            activityLevel: "  قليل النشاط",
+            dietType: " غني بالسكر",
+            smokingStatus: "  لا",
           ),
         ),
       );
@@ -57,8 +57,8 @@ class _QuizScreenState extends State<QuizScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Diabetes Quiz'),
-        backgroundColor: Colors.blue.shade100,
+        title: Text(' السؤال ${currentIndex + 1} من ${allQuestions.length}'),
+        backgroundColor: const Color.fromARGB(255, 166, 4, 230),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -90,7 +90,7 @@ class _QuizScreenState extends State<QuizScreen> {
             ),
             ElevatedButton(
               onPressed: selectedAnswer == null ? null : _nextQuestion,
-              child: Text(currentIndex == allQuestions.length - 1 ? 'Finish' : 'Next ➡'),
+              child: Text(currentIndex == allQuestions.length - 1 ? 'Finish' : 'Next ➡')
             ),
           ],
         ),

@@ -30,12 +30,12 @@ class ResultScreen extends StatelessWidget {
     );
 
     final riskLevel = score <= 30
-        ? "Low Risk"
+        ? "  منخفض الخطورة"
         : score <= 70
-            ? "Moderate Risk"
+            ? "  مقدمات السكري"
             : score <= 100
-                ? "High Risk"
-                : "Very High Risk";
+                ? " النوع الثاني"
+                : " السكري من النوع الأول";
 
     final recommendation = giveRecommendations(
       diagnosis: diagnosis,

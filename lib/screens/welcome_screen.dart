@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:diabetes_app/screens/quiz_screen.dart';
 
-class WelcomeScreen extends StatefulWidget {
+class WelcomeScreen extends StatefulWidget { 
   @override
   _WelcomeScreenState createState() => _WelcomeScreenState();
 }
@@ -73,8 +73,8 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                 ScaleTransition(
                   scale: _scaleAnimation,
                   child: Container(
-                    width: 120,
-                    height: 120,
+                    width: 100,
+                    height: 150,
                     decoration: BoxDecoration(
                       color: Colors.white.withOpacity(0.2),
                       shape: BoxShape.circle,
@@ -82,7 +82,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                     child: Icon(
                       Icons.favorite,
                       color: Colors.red.shade300,
-                      size: 60,
+                      size: 70,
                     ),
                   ),
                 ),
@@ -98,7 +98,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                   child: AnimatedTextKit(
                     animatedTexts: [
                       TyperAnimatedText(
-                        'Diabetes Care',
+                        'مرحبًا في نظام خبراء السكري',
                         speed: const Duration(milliseconds: 100),
                       ),
                     ],
@@ -111,7 +111,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                 FadeTransition(
                   opacity: _opacityAnimation,
                   child: Text(
-                    'Your Personal Health Assistant',
+                    ' Your Personal Diabetes Risk Assessment Tool',
                     style: TextStyle(
                       fontSize: 18,
                       color: Colors.white.withOpacity(0.9),
@@ -159,9 +159,9 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                 FadeTransition(
                   opacity: _opacityAnimation,
                   child: Text(
-                    'Answer a few questions to assess your risk',
+                    'ابدأ بتقييم خطر الإصابة بمرض السكري الخاص بك',
                     style: TextStyle(
-                      color: Colors.white.withOpacity(0.7),
+                      color: const Color.fromARGB(255, 255, 255, 255).withOpacity(0.7),
                       fontSize: 14,
                     ),
                   ),

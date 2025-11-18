@@ -1,28 +1,28 @@
 class DiagnosisEngine {
   String diagnose({
     required int score,
-    String familyHistory = "Yes",
-    String activityLevel = "Sedentary",
-    String dietType = "High-Sugar",
-    String smokingStatus = "No",
+    String familyHistory = "نعم",
+    String activityLevel = "قليل النشاط",
+    String dietType = "غني بالسكر",
+    String smokingStatus = "لا",
   }) {
     String diagnosis = "";
 
     if (score <= 15) {
-      diagnosis = "Healthy";
+      diagnosis = "سليم";
     } else if (score <= 30) {
-      diagnosis = "Low Risk";
+      diagnosis = " منخفض الخطورة";
     } else if (score <= 50) {
-      diagnosis = "Prediabetes";
+      diagnosis = " مقدمات السكري";
     } else if (score <= 70) {
-      diagnosis = "Type 1 Diabetes";
+      diagnosis = " السكري من النوع الأول";
     } else {
-      diagnosis = "Type 2 Diabetes";
+      diagnosis = " النوع الثاني";
     }
 
     // Additional rules
     if (familyHistory == "Yes" && score > 50) {
-      diagnosis = "Type 2 Diabetes (Family Risk)";
+      diagnosis = "عائلي من النوع الثاني";
     }
 
     return diagnosis;

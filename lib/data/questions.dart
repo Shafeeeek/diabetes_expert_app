@@ -2,235 +2,234 @@ import 'package:diabetes_app/models/question.dart';
 
 Map<String, List<Question>> createDiabetesQuestions() {
   final questions = <String, List<Question>>{
-    "Pre-Diabetes": [
+    "مقدمات السكري": [
       Question(
-        question: "What is responsible for destroying insulin-producing cells in Type 1 diabetes?",
-        choices: {"A": "The liver", "B": "The immune system", "C": "The kidneys", "D": "The pancreas"},
+        question: "ما المسؤول عن تدمير الخلايا المنتجة للأنسولين في مرض السكري من النوع الأول؟",
+        choices: {"أ": "الكبد", "ب": "جهاز المناعة", "ج": "الكلى", "د": "البنكرياس"},
         weight: 1,
-        correctAnswer: "B",
+        correctAnswer: "ب",
       ),
       Question(
-        question: "What does insulin regulate in the body?",
-        choices: {"A": "Blood pressure", "B": "Heart rate", "C": "Blood sugar levels", "D": "Body temperature"},
+        question: "ماذا ينظم الأنسولين في الجسم؟",
+        choices: {"أ": "ضغط الدم", "ب": "معدل ضربات القلب", "ج": "مستويات سكر الدم", "د": "درجة حرارة الجسم"},
         weight: 2,
-        correctAnswer: "C",
+        correctAnswer: "ج",
       ),
       Question(
-        question: "Which of the following is a common symptom of diabetes?",
-        choices: {"A": "Frequent urination", "B": "Blurred vision", "C": "Joint pain", "D": "Hair loss"},
+        question: "أي من الأعراض التالية شائع لمرض السكري؟",
+        choices: {"أ": "كثرة التبول", "ب": "عدم وضوح الرؤية", "ج": "آلام المفاصل", "د": "تساقط الشعر"},
         weight: 1,
-        correctAnswer: "A",
+        correctAnswer: "أ",
       ),
     ],
-    "Type 1 Diabetes": [
+    "السكري من النوع الأول": [
       Question(
-        question: "What is insulin resistance?",
+        question: "ما هي مقاومة الأنسولين؟",
         choices: {
-          "A": "When the body produces too much insulin",
-          "B": "When the body's cells do not respond properly to insulin",
-          "C": "When the pancreas stops producing insulin",
-          "D": "When insulin is destroyed by the immune system"
+          "أ": "عندما ينتج الجسم الكثير من الأنسولين",
+          "ب": "عندما لا تستجيب خلايا الجسم بشكل صحيح للأنسولين",
+          "ج": "عندما يتوقف البنكرياس عن إنتاج الأنسولين",
+          "د": "عندما يتم تدمير الأنسولين بواسطة جهاز المناعة"
         },
         weight: 3,
-        correctAnswer: "B",
+        correctAnswer: "ب",
       ),
       Question(
-        question: "Which factor increases the risk of developing diabetes?",
-        choices: {"A": "Obesity", "B": "Low blood pressure", "C": "High cholesterol", "D": "Vitamin D deficiency"},
+        question: "أي عامل يزيد من خطر الإصابة بمرض السكري؟",
+        choices: {"أ": "السمنة", "ب": "انخفاض ضغط الدم", "ج": "ارتفاع الكوليسترول", "د": "نقص فيتامين د"},
         weight: 4,
-        correctAnswer: "A",
+        correctAnswer: "أ",
       ),
       Question(
-        question: "Which organ produces insulin?",
-        choices: {"A": "Liver", "B": "Kidneys", "C": "Pancreas", "D": "Spleen"},
+        question: "أي عضو ينتج الأنسولين؟",
+        choices: {"أ": "الكبد", "ب": "الكلى", "ج": "البنكرياس", "د": "الطحال"},
         weight: 3,
-        correctAnswer: "C",
+        correctAnswer: "ج",
       ),
     ],
-    // Add other categories similarly...
-    "Type 2 Diabetes": [
+    "السكري من النوع الثاني": [
       Question(
-        question: "What distinguishes Type 1 from Type 2 diabetes?",
+        question: "ما الذي يميز النوع الأول عن النوع الثاني من السكري؟",
         choices: {
-          "A": "Type 1 is caused by diet, while Type 2 is genetic.",
-          "B": "Type 1 is an autoimmune reaction, while Type 2 is related to lifestyle.",
-          "C": "Type 1 occurs in adults, while Type 2 occurs in children.",
-          "D": "Type 1 requires oral medication, while Type 2 requires insulin."
+          "أ": "النوع الأول يسببه النظام الغذائي، بينما النوع الثاني وراثي",
+          "ب": "النوع الأول هو تفاعل مناعي ذاتي، بينما النوع الثاني مرتبط بنمط الحياة",
+          "ج": "النوع الأول يصيب البالغين، بينما النوع الثاني يصيب الأطفال",
+          "د": "النوع الأول يتطلب أدوية فموية، بينما النوع الثاني يتطلب الأنسولين"
         },
         weight: 5,
-        correctAnswer: "B",
+        correctAnswer: "ب",
       ),
       Question(
-        question: "Which complication can result from uncontrolled diabetes?",
+        question: "أي من المضاعفات يمكن أن تنتج عن السكري غير المسيطر عليه؟",
         choices: {
-          "A": "Heart disease and kidney failure",
-          "B": "Improved vision",
-          "C": "Weight loss",
-          "D": "Increased energy"
+          "أ": "أمراض القلب والفشل الكلوي",
+          "ب": "تحسن الرؤية",
+          "ج": "فقدان الوزن",
+          "د": "زيادة الطاقة"
         },
         weight: 6,
-        correctAnswer: "A",
+        correctAnswer: "أ",
       ),
       Question(
-        question: "How does regular exercise affect blood sugar levels?",
+        question: "كيف تؤثر التمارين الرياضية المنتظمة على مستويات سكر الدم؟",
         choices: {
-          "A": "It has no effect.",
-          "B": "It increases blood sugar levels.",
-          "C": "It lowers blood sugar levels.",
-          "D": "It causes hypoglycemia permanently."
+          "أ": "ليس لها أي تأثير",
+          "ب": "تزيد من مستويات سكر الدم",
+          "ج": "تخفض مستويات سكر الدم",
+          "د": "تسبب انخفاض سكر الدم بشكل دائم"
         },
         weight: 5,
-        correctAnswer: "C",
+        correctAnswer: "ج",
       ),
     ],
-    "Insulin Resistance": [
+    "مقاومة الأنسولين": [
       Question(
-        question: "What does the HbA1c test measure?",
+        question: "ماذا يقيس اختبار الهيموغلوبين السكري (HbA1c)؟",
         choices: {
-          "A": "Daily blood sugar levels",
-          "B": "Average blood sugar levels over 2-3 months",
-          "C": "Insulin production",
-          "D": "Cholesterol levels"
+          "أ": "مستويات سكر الدم اليومية",
+          "ب": "متوسط مستويات سكر الدم خلال 2-3 أشهر",
+          "ج": "إنتاج الأنسولين",
+          "د": "مستويات الكوليسترول"
         },
         weight: 7,
-        correctAnswer: "B",
+        correctAnswer: "ب",
       ),
       Question(
-        question: "Which of these are types of oral medications for diabetes?",
+        question: "أي من هذه الأدوية الفموية لمرض السكري؟",
         choices: {
-          "A": "Metformin, sulfonylureas, and DPP-4 inhibitors",
-          "B": "Insulin injections only",
-          "C": "Vitamins and supplements",
-          "D": "Antibiotics"
+          "أ": "الميتفورمين، السلفونيل يوريا، ومثبطات DPP-4",
+          "ب": "حقن الأنسولين فقط",
+          "ج": "الفيتامينات والمكملات الغذائية",
+          "د": "المضادات الحيوية"
         },
         weight: 8,
-        correctAnswer: "A",
+        correctAnswer: "أ",
       ),
       Question(
-        question: "What is diabetic ketoacidosis (DKA)?",
+        question: "ما هي الحماض الكيتوني السكري (DKA)؟",
         choices: {
-          "A": "A mild form of diabetes",
-          "B": "A life-threatening complication of diabetes",
-          "C": "A dietary supplement",
-          "D": "A type of insulin pump"
+          "أ": "شكل خفيف من مرض السكري",
+          "ب": "مضاعفة تهدد الحياة لمرض السكري",
+          "ج": "مكمل غذائي",
+          "د": "نوع من مضخات الأنسولين"
         },
         weight: 7,
-        correctAnswer: "B",
+        correctAnswer: "ب",
       ),
     ],
-    "Gestational Diabetes": [
+    "سكري الحمل": [
       Question(
-        question: "What type of diet is recommended for people with diabetes?",
+        question: "أي نوع من النظام الغذائي موصى به لمرضى السكري؟",
         choices: {
-          "A": "High-sugar, low-fiber",
-          "B": "Low-sugar, high-fiber",
-          "C": "High-fat, low-protein",
-          "D": "Unrestricted diet"
+          "أ": "عالٍ بالسكر، منخفض الألياف",
+          "ب": "منخفض السكر، عالي الألياف",
+          "ج": "عالٍ بالدهون، منخفض البروتين",
+          "د": "نظام غذائي غير مقيد"
         },
         weight: 9,
-        correctAnswer: "B",
+        correctAnswer: "ب",
       ),
       Question(
-        question: "How does stress affect blood sugar levels?",
+        question: "كيف يؤثر التوتر على مستويات سكر الدم؟",
         choices: {
-          "A": "It has no effect.",
-          "B": "It decreases blood sugar levels.",
-          "C": "It increases blood sugar levels.",
-          "D": "It stabilizes blood sugar levels."
+          "أ": "ليس له أي تأثير",
+          "ب": "يخفض مستويات سكر الدم",
+          "ج": "يرفع مستويات سكر الدم",
+          "د": "يثبت مستويات سكر الدم"
         },
         weight: 10,
-        correctAnswer: "C",
+        correctAnswer: "ج",
       ),
       Question(
-        question: "Why is glucose monitoring important for managing diabetes?",
+        question: "لماذا تعتبر مراقبة الجلوكوز مهمة لإدارة مرض السكري؟",
         choices: {
-          "A": "To track daily calorie intake",
-          "B": "To adjust insulin doses and manage blood sugar levels",
-          "C": "To monitor cholesterol levels",
-          "D": "To measure blood pressure"
+          "أ": "لمتابعة السعرات الحرارية اليومية",
+          "ب": "لتعديل جرعات الأنسولين وإدارة مستويات سكر الدم",
+          "ج": "لمراقبة مستويات الكوليسترول",
+          "د": "لقياس ضغط الدم"
         },
         weight: 9,
-        correctAnswer: "B",
+        correctAnswer: "ب",
       ),
     ],
-    "Diabetic Complications": [
+    "مضاعفات السكري": [
       Question(
-        question: "What is the benefit of using an insulin pump?",
+        question: "ما فائدة استخدام مضخة الأنسولين؟",
         choices: {
-          "A": "It eliminates the need for glucose monitoring.",
-          "B": "It provides more precise insulin delivery.",
-          "C": "It cures diabetes.",
-          "D": "It reduces the need for dietary restrictions."
+          "أ": "تزيل الحاجة لمراقبة الجلوكوز",
+          "ب": "توفر توصيل الأنسولين بدقة أكبر",
+          "ج": "تشفي من مرض السكري",
+          "د": "تقلل الحاجة للقيود الغذائية"
         },
         weight: 11,
-        correctAnswer: "B",
+        correctAnswer: "ب",
       ),
       Question(
-        question: "What does the glycemic index measure?",
+        question: "ماذا يقيس المؤشر الجلايسيمي؟",
         choices: {
-          "A": "The speed at which a food raises blood sugar levels",
-          "B": "The fat content of food",
-          "C": "The protein content of food",
-          "D": "The vitamin content of food"
+          "أ": "السرعة التي يرفع بها الطعام مستويات سكر الدم",
+          "ب": "محتوى الدهون في الطعام",
+          "ج": "محتوى البروتين في الطعام",
+          "د": "محتوى الفيتامينات في الطعام"
         },
         weight: 12,
-        correctAnswer: "A",
+        correctAnswer: "أ",
       ),
       Question(
-        question: "How is poor sleep associated with diabetes?",
+        question: "كيف يرتبط النوم غير الكافي بمرض السكري؟",
         choices: {
-          "A": "It has no association.",
-          "B": "It decreases diabetes risk.",
-          "C": "It increases diabetes risk.",
-          "D": "It improves insulin sensitivity."
+          "أ": "لا توجد علاقة بينهما",
+          "ب": "يقلل من خطر الإصابة بالسكري",
+          "ج": "يزيد من خطر الإصابة بالسكري",
+          "د": "يحسن حساسية الأنسولين"
         },
         weight: 11,
-        correctAnswer: "C",
+        correctAnswer: "ج",
       ),
     ],
-    "Diabetes Management": [
+    "إدارة السكري": [
       Question(
-        question: "Do genetics play a significant role in diabetes risk?",
-        choices: {"A": "Yes", "B": "No"},
+        question: "هل تلعب الوراثة دوراً مهماً في خطر الإصابة بمرض السكري؟",
+        choices: {"أ": "نعم", "ب": "لا"},
         weight: 13,
-        correctAnswer: "A",
+        correctAnswer: "أ",
       ),
       Question(
-        question: "Is gestational diabetes a temporary form of diabetes during pregnancy?",
-        choices: {"A": "Yes", "B": "No"},
+        question: "هل سكري الحمل شكل مؤقت من السكري أثناء الحمل؟",
+        choices: {"أ": "نعم", "ب": "لا"},
         weight: 14,
-        correctAnswer: "A",
+        correctAnswer: "أ",
       ),
       Question(
-        question: "Is hypoglycemia associated with low blood sugar levels?",
-        choices: {"A": "Yes", "B": "No"},
+        question: "هل يرتبط انخفاض سكر الدم بمستويات سكر الدم المنخفضة؟",
+        choices: {"أ": "نعم", "ب": "لا"},
         weight: 13,
-        correctAnswer: "A",
+        correctAnswer: "أ",
       ),
     ],
-    "Advanced Diabetes Research": [
+    "أبحاث السكري المتقدمة": [
       Question(
-        question: "Is artificial pancreas technology an advancement in diabetes research?",
-        choices: {"A": "Yes", "B": "No"},
+        question: "هل تعتبر تكنولوجيا البنكرياس الاصطناعي تقدمًا في أبحاث السكري؟",
+        choices: {"أ": "نعم", "ب": "لا"},
         weight: 15,
-        correctAnswer: "A",
+        correctAnswer: "أ",
       ),
       Question(
-        question: "Can artificial intelligence help predict blood sugar trends?",
-        choices: {"A": "Yes", "B": "No"},
+        question: "هل يمكن للذكاء الاصطناعي المساعدة في التنبؤ باتجاهات سكر الدم؟",
+        choices: {"أ": "نعم", "ب": "لا"},
         weight: 16,
-        correctAnswer: "A",
+        correctAnswer: "أ",
       ),
       Question(
-        question: "Are accessibility and affordability concerns related to advanced diabetes treatments?",
-        choices: {"A": "Yes", "B": "No"},
+        question: "هل ترتبط مخاوف الوصول والتكلفة بعلاجات السكري المتقدمة؟",
+        choices: {"أ": "نعم", "ب": "لا"},
         weight: 15,
-        correctAnswer: "A",
+        correctAnswer: "أ",
       ),
     ],
   };
 
-  // Sort each category by weight (ascending)
+  // ترتيب كل فئة حسب الوزن (تصاعدياً)
   questions.forEach((key, value) {
     value.sort((a, b) => a.weight.compareTo(b.weight));
   });

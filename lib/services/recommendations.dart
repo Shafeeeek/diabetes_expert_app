@@ -5,60 +5,60 @@ String giveRecommendations({
   String? smokingStatus,
   String? dietType,
 }) {
-  final buffer = StringBuffer("Diagnosis: $diagnosis\n");
+  final buffer = StringBuffer("التشخيص: $diagnosis\n");
 
-  if (diagnosis == "Healthy" || diagnosis == "Low Risk") {
+  if (diagnosis == "سليم" || diagnosis == "منخفض الخطورة") {
     buffer.writeln(
-      "✅ You are not diabetic. Here's how to stay that way:\n"
-      "- Maintain a healthy diet.\n"
-      "- Exercise regularly.\n"
-      "- Monitor your weight and blood sugar occasionally.\n"
-      "- Get enough sleep and avoid stress.\n"
+      "✅ أنت غير مصاب بالسكري. إليك نصائح للبقاء بصحة جيدة:\n"
+      "- حافظ على نظام غذائي صحي.\n"
+      "- مارس الرياضة بانتظام.\n"
+      "- راقب وزنك وسكر الدم بين الحين والآخر.\n"
+      "- احصل على قسط كافٍ من النوم وتجنب التوتر.\n"
     );
-  } else if (diagnosis == "Prediabetes") {
+  } else if (diagnosis == "مقدمات السكري") {
     buffer.writeln(
-      "⚠️ You are at risk (Prediabetes). Take action:\n"
-      "- Adopt a low-sugar, high-fiber diet.\n"
-      "- Lose 5-10% of your body weight.\n"
-      "- Get regular blood sugar tests.\n"
-      "- Exercise at least 30 mins/day.\n"
+      "⚠️ أنت في مرحلة ما قبل السكري. اتخذ الإجراءات اللازمة:\n"
+      "- اعتمد نظاماً غذائياً منخفض السكر وعالي الألياف.\n"
+      "- خسر 5-10% من وزن جسمك.\n"
+      "- احصل على فحوصات منتظمة لسكر الدم.\n"
+      "- مارس الرياضة 30 دقيقة على الأقل يومياً.\n"
     );
-  } else if (diagnosis.contains("Type 2")) {
+  } else if (diagnosis.contains("النوع الثاني")) {
     buffer.writeln(
-      "❗ You have Type 2 Diabetes. Management tips:\n"
-      "- Monitor blood sugar daily.\n"
-      "- Take prescribed medications or insulin.\n"
-      "- Control carbs and sugars in your diet.\n"
-      "- Get regular checkups and foot exams.\n"
+      "❗ أنت مصاب بداء السكري من النوع الثاني. نصائح للتعامل معه:\n"
+      "- راقب مستوى سكر الدم يومياً.\n"
+      "- تناول الأدوية الموصوفة أو الإنسولين.\n"
+      "- تحكم في الكربوهيدرات والسكريات في نظامك الغذائي.\n"
+      "- احصل على فحوصات منتظمة وفحوصات القدم.\n"
     );
-  } else if (diagnosis == "Type 1 Diabetes") {
+  } else if (diagnosis == "السكري من النوع الأول") {
     buffer.writeln(
-      "❗ You have Type 1 Diabetes. This requires medical support:\n"
-      "- Insulin therapy is necessary.\n"
-      "- Continuous glucose monitoring is advised.\n"
-      "- Meal planning and carb counting are important.\n"
-      "- Stay in touch with your doctor regularly.\n"
+      "❗ أنت مصاب بداء السكري من النوع الأول. هذا يتطلب دعم طبي:\n"
+      "- العلاج بالإنسولين ضروري.\n"
+      "- المراقبة المستمرة للغلوكوز موصى بها.\n"
+      "- تخطيط الوجبات وحساب الكربوهيدرات مهم.\n"
+      "- حافظ على التواصل مع طبيبك بانتظام.\n"
     );
   }
 
-  if (familyHistory == "Yes") {
-    buffer.writeln("\n⚠️ Family history of diabetes detected. Regular screening is critical.");
+  if (familyHistory == "نعم") {
+    buffer.writeln("\n⚠️ تم اكتشاف تاريخ عائلي للإصابة بالسكري. الفحص الدوري ضروري.");
   }
-  if (activityLevel == "Sedentary") {
-    buffer.writeln("\n⚠️ Sedentary lifestyle: Aim for 30+ mins of daily exercise.");
+  if (activityLevel == "قليل النشاط") {
+    buffer.writeln("\n⚠️ نمط حياة خامل: استهدف 30+ دقيقة من التمارين اليومية.");
   }
-  if (smokingStatus == "Yes") {
-    buffer.writeln("\n⚠️ Smoking increases diabetes complications. Seek cessation support.");
+  if (smokingStatus == "نعم") {
+    buffer.writeln("\n⚠️ التدخين يزيد من مضاعفات السكري. اطلب الدعم للإقلاع عنه.");
   }
-  if (dietType == "High-Sugar") {
-    buffer.writeln("\n⚠️ High-sugar diet: Switch to low-sugar, high-fiber meals.");
+  if (dietType == "غني بالسكر") {
+    buffer.writeln("\n⚠️ نظام غذائي عالي السكر: انتقل إلى وجبات منخفضة السكر وعالية الألياف.");
   }
 
   buffer.writeln(
-    "\n💡 General Prevention Tips:\n"
-    "- Avoid smoking & alcohol.\n"
-    "- Manage stress through meditation or hobbies.\n"
-    "- Keep a regular sleep schedule.\n"
+    "\n💡 نصائح عامة للوقاية:\n"
+    "- تجنب التدخين والكحول.\n"
+    "- إدارة التوتر من خلال التأمل أو الهوايات.\n"
+    "- حافظ على جدول نوم منتظم.\n"
   );
 
   return buffer.toString();
